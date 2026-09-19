@@ -1,0 +1,13 @@
+@Domain
+var Account {
+  name
+}
+
+@Database(Account, "accounts") {
+  crud
+}
+
+@Component
+var Page {
+  onSubmit: Account.missingQuery
+}

@@ -1,0 +1,14 @@
+@Component
+var UserLogin {
+  ui: FormLogin
+  title: "Please login"
+  fields {
+    userName
+    password (passwordField)
+  }
+  onSubmit: User.login
+}
+
+@JS {
+  function strongPassword(pwd) { return pwd.length >= 8 && /[A-Z]/.test(pwd); }
+}

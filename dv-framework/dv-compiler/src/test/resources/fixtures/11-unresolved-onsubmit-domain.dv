@@ -1,0 +1,4 @@
+@Component
+var Page {
+  onSubmit: Ghost.save
+}

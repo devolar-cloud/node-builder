@@ -1,0 +1,18 @@
+@Domain
+var Item {
+  label
+}
+
+@Database(Item, "items") {
+  crud
+  query touch(label): one
+}
+
+@Component
+var ItemForm {
+  fields {
+    label
+    price
+  }
+  onSubmit: Item.touch
+}

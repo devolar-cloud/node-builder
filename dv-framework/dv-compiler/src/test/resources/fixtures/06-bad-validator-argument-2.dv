@@ -1,0 +1,4 @@
+@Domain
+var Product {
+  @validator(notEmpty(min: 1)) name
+}

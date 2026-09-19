@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.dvlang</groupId>
+    <artifactId>dv-framework</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>dv-lsp</artifactId>
+  <packaging>jar</packaging>
+
+  <name>dv-lsp</name>
+  <description>
+    LSP4J server over stdio, wired into IntelliJ through LSP4IJ (brief section 5).
+    Not yet implemented: targeted at milestone M2, built right after dv-compiler so
+    every later .dv test file gets editor feedback. Module skeleton only.
+  </description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.dvlang</groupId>
+      <artifactId>dv-compiler</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

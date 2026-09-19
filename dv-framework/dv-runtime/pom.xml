@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.dvlang</groupId>
+    <artifactId>dv-framework</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>dv-runtime</artifactId>
+  <packaging>jar</packaging>
+
+  <name>dv-runtime</name>
+  <description>
+    Vert.x 5 BFF: component serving, signed stateless actions, Redis sessions, esbuild
+    service, dev loop, polyglot host (brief sections 6, 7, 9). Not yet implemented:
+    targeted at milestones M3, M5, M7, M8. Module skeleton only, depends on all other
+    modules per the dependency table in brief section 2.
+  </description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.dvlang</groupId>
+      <artifactId>dv-compiler</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.dvlang</groupId>
+      <artifactId>dv-emitter-react</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.dvlang</groupId>
+      <artifactId>dv-emitter-lit</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,4 @@
+@Domain
+var Widget {
+  @bogus name
+}

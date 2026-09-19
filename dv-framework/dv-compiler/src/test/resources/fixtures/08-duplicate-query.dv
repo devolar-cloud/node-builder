@@ -1,0 +1,9 @@
+@Domain
+var Account {
+  name
+}
+
+@Database(Account, "accounts") {
+  query findByName(name): one
+  query findByName(name): one
+}
