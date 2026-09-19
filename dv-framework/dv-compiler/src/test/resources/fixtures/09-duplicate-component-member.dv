@@ -1,5 +1,0 @@
-@Component
-var Page {
-  ui: FormLogin
-  ui: FormCreate
-}

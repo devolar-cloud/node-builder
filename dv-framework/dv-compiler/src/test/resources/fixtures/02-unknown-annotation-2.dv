@@ -1,4 +1,0 @@
-@Domain
-var Item {
-  @required label
-}

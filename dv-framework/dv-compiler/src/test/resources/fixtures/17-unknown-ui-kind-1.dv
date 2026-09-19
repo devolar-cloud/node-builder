@@ -1,4 +1,0 @@
-@Component
-var Weird {
-  ui: NotAKind
-}

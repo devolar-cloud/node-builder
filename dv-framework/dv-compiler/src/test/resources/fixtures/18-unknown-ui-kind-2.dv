@@ -1,4 +1,0 @@
-@Component
-var AnotherWeird {
-  ui: BogusThing
-}

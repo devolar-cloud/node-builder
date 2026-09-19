@@ -1,4 +1,0 @@
-@Domain
-var Account {
-  @validator(bogus) name
-}

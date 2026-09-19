@@ -1,6 +1,0 @@
-{
-  "name": "dv-example",
-  "private": true,
-  "version": "0.0.0",
-  "description": "User.dv + UserLogin.dv, consumed by dv-compiler tests (brief section 2). Not a runnable npm project yet: the esbuild/npm auto-install pipeline is milestone M5."
-}
